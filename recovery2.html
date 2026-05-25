@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><title>台灣救援小隊 2 - FitFam Global Session</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css?v=20260525zh1"></head>
+<body><img src="my-photo.jpg" id="cornerLogo" alt="FitFam Logo"><audio id="finalReportSound" src="final-report.mp3" preload="auto"></audio><audio id="bombSound" src="bomb-countdown.mp3" preload="auto" loop></audio><audio id="endingMusic" src="ending-music.mp3" preload="auto" loop></audio><h1>台灣救援小隊 2</h1>
+<div id="mission1" class="panel"><h2>任務 1</h2><p class="textBlock"><span class="sectionTitle">故事</span>
+更新：
+偵測到移動跡象。
+人質可能已被轉移。
+追蹤訊號。
+
+<span class="sectionTitle">為什麼重要</span>
+完成此任務會幫助 香港追蹤單位 解鎖情報。你們正在共同完成同一個行動。
+
+<span class="sectionTitle">行動</span>
+跑到地點 1
+• 30 次夥伴掌上壓擊掌
+
+<span class="sectionTitle">影片要求</span>
+• 拍攝 3–5 秒影片
+• 全隊必須入鏡
+• 地點必須清楚可見
+• 所有隊員必須出現在影片中
+
+<span class="sectionTitle">隊伍規則</span>
+全隊一起行動。不要留下任何人。
+
+<span class="sectionTitle">上載</span>
+將影片上載到 WhatsApp，格式：
+[地點 – HK 或 TW] Team [隊名]
+
+<span class="sectionTitle">返回</span>
+返回 HQ 領取 PIN
+沒有影片 = 沒有 PIN</p><p class="mediaTitle">地圖</p><img src="recovery2-mission1-map.jpg" class="missionImage" alt="任務 1 地圖"><p class="mediaTitle">地點照片</p><img src="recovery2-mission1-photo.jpg" class="missionImage" alt="任務 1 地點照片"><input id="pin1" placeholder="輸入 PIN 1"><br><button onclick="unlockMission2()">解鎖情報 + 任務 2</button></div>
+<div id="intel" class="panel hidden"><h2>情報更新</h2><p class="textBlock"><span class="sectionTitle">給 香港追蹤單位 的情報</span>
+已確認視覺資料。
+
+影像證據已取得。
+
+地點影像已為香港追蹤單位確認。
+
+此情報已解鎖，供 香港追蹤單位 使用。
+
+此情報正在傳送給 香港追蹤單位。</p><p class="mediaTitle">香港最終任務地圖</p><img src="tracking-final-map.jpg" class="missionImage" alt="香港最終任務地圖"><button onclick="startTransmission()">傳送情報</button></div>
+<div id="transmission" class="panel hidden"><h2>已建立上傳連線</h2><p id="transmissionStatus" class="textBlock">情報傳送中…</p><button id="mission2Button" class="hidden" onclick="showScreen('mission2')">繼續任務 2</button></div>
+<div id="mission2" class="panel hidden"><h2>任務 2</h2><p class="textBlock"><span class="sectionTitle">故事</span>
+最終訊號：
+人質就在附近。
+立即行動。
+
+<span class="sectionTitle">為什麼重要</span>
+你們的進度會繼續支援 香港追蹤單位。你們仍然是同一個行動的一部分。
+
+<span class="sectionTitle">行動</span>
+跑到地點 2
+• 40 次夥伴深蹲跳擊掌
+
+<span class="sectionTitle">影片要求</span>
+• 拍攝 3–5 秒影片
+• 全隊必須入鏡
+• 地點必須清楚可見
+• 所有隊員必須出現在影片中
+
+<span class="sectionTitle">隊伍規則</span>
+全隊一起行動。不要留下任何人。
+
+<span class="sectionTitle">上載</span>
+將影片上載到 WhatsApp，格式：
+[地點 – HK 或 TW] Team [隊名]
+
+<span class="sectionTitle">返回</span>
+返回 HQ 領取 PIN
+沒有影片 = 沒有 PIN</p><p class="mediaTitle">地圖</p><img src="recovery2-mission2-map.jpg" class="missionImage" alt="任務 2 地圖"><p class="mediaTitle">地點照片</p><img src="recovery2-mission2-photo.jpg" class="missionImage" alt="任務 2 地點照片"><input id="pin2" placeholder="輸入 PIN 2"><br><button onclick="unlockFinalAccess()">返回 HQ — 解鎖最終行動頁</button></div>
+<div id="finalAccess" class="panel hidden"><h2>最終行動</h2><p class="textBlock">最終行動
+
+你們已完成任務，
+並為香港追蹤隊取得關鍵情報。
+
+但是——
+
+行動尚未完成。
+
+要追蹤人質的位置，
+你們現在需要來自香港的最終存取 PIN。
+
+沒有香港的情報——
+
+你們無法繼續救出人質。</p><div class="transmissionBox"><h2>📡 必須傳送</h2><p class="textBlock">你們現在必須把以下訊息傳送給另一地點。</p><div class="instructionBox"><p><strong>指示：</strong></p><p>1. 點擊 COPY MESSAGE</p><p>2. 打開隊伍 WhatsApp 群組</p><p>3. 貼上訊息</p><p>4. 立即傳送</p><p class="warningText">不要修改訊息。</p><p class="warningText">沒有完成此步驟，你們無法繼續。</p></div><pre id="copyText" class="copyMessage">TARGET LOCKED
+PIN TO UNLOCK FINAL HK MISSION IS 3838
+TRANSMIT IMMEDIATELY</pre><button onclick="copyMessage()" class="copyButton">COPY MESSAGE 📋</button><p id="copyStatus" class="copyStatus"></p></div><div class="accessBox"><h2>等待最終存取 PIN</h2><p class="textBlock">請等待 WhatsApp 中來自香港的最終存取 PIN。
+
+收到訊息後，才在下方輸入 PIN。</p><input id="crossPin" placeholder="輸入來自香港的 PIN"><br><button onclick="unlockFinalMission()">解鎖最終任務</button></div></div>
+<div id="finalMission" class="panel hidden"><h2>台灣救援最終任務</h2><p class="textBlock"><span class="sectionTitle">故事</span>
+來自香港的情報已抵達。
+
+訊號不再微弱。
+位置已確認。
+人質就在附近。
+
+但時間正在縮短。
+如果嫌疑人再次移動，線索可能會中斷。
+
+立即行動。
+抵達地點。
+把人質帶回來。
+
+<span class="sectionTitle">行動</span>
+跑到最終地點。
+
+<span class="sectionTitle">目標</span>
+在位置失效前救出人質。
+
+<span class="sectionTitle">運動</span>
+• 20 次夥伴波比跳擊掌
+
+<span class="sectionTitle">照片指示</span>
+• 一名隊員扮演人質
+• 其他隊員進行救援動作
+• 全隊必須入鏡
+• 地點必須清楚可見
+
+上載到 WhatsApp
+
+返回 HQ 解鎖最終階段</p><p class="mediaTitle">最終地點地圖</p><img src="recovery-final-map.jpg" class="missionImage" alt="最終地點地圖"><p class="mediaTitle">最終地點照片</p><img src="recovery-final-photo.jpg" class="missionImage" alt="最終地點照片"><input id="finalPin" placeholder="輸入 Final PIN"><br><button onclick="unlockFinalStory()">解鎖最終階段</button></div>
+<div id="finalStory" class="panel hidden"><h2>最終報告</h2><p class="textBlock">行動完成。
+然後——
+BEEP.
+BEEP.
+BEEP.
+一個裝置被啟動。
+炸彈。
+倒數中。
+沒有時間移動。
+螢幕出現訊息：
+「你們走到這一步。
+你們以為會這麼容易嗎？
+你們真的以為自己能活下來？」
+這從來不只是任務。
+而是你們之間的連結。
+輸入代碼解除炸彈。</p><button onclick="startCountdown()">解除裝置</button></div>
+<div id="countdown" class="panel hidden"><h2>⚠️ 炸彈啟動 ⚠️</h2><div id="timer">02:00</div><p class="textBlock">Enter code to deactivate bomb:
+WE SWEAT, WE ______</p><input id="bombCode" placeholder="Enter code"><br><button onclick="checkBombCode()">DEACTIVATE BOMB</button></div>
+<div id="ending" class="panel hidden"><h2>任務完成</h2><p id="endingText" class="textBlock"></p><button onclick="showScreen('finalMessage')">繼續</button></div><div id="failure" class="panel hidden"><h2>任務失敗</h2><p class="textBlock">倒數歸零。
+裝置已啟動。</p></div><div id="finalMessage" class="panel hidden"><h2>最終訊息</h2><p class="textBlock">沒有任何一隊掌握全部資訊。
+沒有任何一隊能獨自完成任務。
+你們互相信任。
+你們適應變化。
+你們完成任務。
+We sweat.
+We connect.</p></div>
+<script>
+const PIN1="1886", PIN2="2816", FINAL_PIN="4832", CROSS_PIN="3339", BOMB_CODE="connect"; const roleEndings=["最終報告：\n\n你們找到了人質。\n\n一個孩子。\n\n安靜地看著你們。\n\n你向前一步。\n\n「我們是來幫你的。」\n\n孩子沒有說話。\n\n然後——\n\n一個聲音，出現在你的腦海。\n\n「你們比我預期中慢了一點。」\n\n你停住了。\n\n「我聽得到你們在想什麼。」孩子平靜地說。\n\n「有時候……我也會回答。」\n\n你立刻明白了。\n\n這就是孩子被帶走的原因。\n\n被選中。\n\n「他們說我可以改變世界。」\n\n短暫沉默。\n\n「你們會帶我去安全的地方嗎？」\n\n你點頭。\n\n還沒開口——\n\n「我知道。」\n\n撤離完成。\n\n但這從來不只是一次救援。", "最終報告：\n\n你們找到了人質。\n\n安全。\n\n還活著。\n\n後來——\n\n一則訊息傳來。\n\n「謝謝你們。\n\n他們回家了。」\n\n你們沒有真正見過他們。\n\n但你們知道——\n\n這一切很重要。", "最終報告：\n\n你們抵達目標位置。\n\n人質抬頭。\n\n一瞬間。\n\n確認。\n\n然後行動。\n\n快速。\n準確。\n安全。\n\n這一刻——\n\n已經足夠。", "情報檔案：\n\n3天前……\n\n一輛車。\n\n一個家庭。\n\n平常的笑聲。\n\n然後——\n\n一切改變。\n\n孩子被帶走。\n\n強行帶走。\n\n消失。\n\n而那個孩子……\n\n就是你們今天救出的人。\n\n也是這次任務存在的原因。"]; const globalEndings=["3天後……\n\n表彰。\n\n兩地同步。\n\n然後——\n\n所有手機同時震動。\n\n核裝置已確認\n\n啟動倒數：10小時\n\n一片寂靜。\n\n任務還沒結束。\n\n「準備行動。」", "內部紀錄：\n\n1小時前……\n\n我們收到訊號。\n\n我們需要隊伍。\n\n不是最受訓練的隊伍。\n\n而是已經準備好的人。\n\n那就是你們。\n\n已經在移動。\n\n已經連結起來。\n\n這就是你們被選中的原因。"]; let timerInterval=null, secondsRemaining=120;
+function safePlay(id,restart=true){const a=document.getElementById(id);if(!a)return;if(restart)a.currentTime=0;a.play().catch(function(){});} function safeStop(id){const a=document.getElementById(id);if(!a)return;a.pause();a.currentTime=0;}
+function handleAudio(id){if(id==='countdown'){safeStop('endingMusic');safePlay('bombSound');}else if(id==='finalStory'){safeStop('bombSound');safeStop('endingMusic');safePlay('finalReportSound');}else if(id==='ending'||id==='finalMessage'){safeStop('bombSound');safePlay('endingMusic',false);}else if(id==='failure'){safeStop('bombSound');}}
+function showScreen(id){document.querySelectorAll('.panel').forEach(p=>p.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');handleAudio(id);window.scrollTo(0,0);}
+function startTransmission(){showScreen('transmission');document.getElementById('transmissionStatus').innerText='情報傳送中…';document.getElementById('mission2Button').classList.add('hidden');setTimeout(function(){document.getElementById('transmissionStatus').innerText='✅ 完成';document.getElementById('mission2Button').classList.remove('hidden');},1800);}
+function copyMessage(){const text=document.getElementById('copyText').innerText.trim(); if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>document.getElementById('copyStatus').innerText='✅ 訊息已複製。請打開 WhatsApp 並貼上。').catch(()=>fallbackCopy(text));}else{fallbackCopy(text);}} function fallbackCopy(text){const area=document.createElement('textarea');area.value=text;document.body.appendChild(area);area.select();document.execCommand('copy');document.body.removeChild(area);document.getElementById('copyStatus').innerText='✅ 訊息已複製。請打開 WhatsApp 並貼上。';}
+function unlockMission2(){if(document.getElementById('pin1').value.trim()===PIN1)showScreen('intel');else alert('存取被拒');} function unlockFinalAccess(){if(document.getElementById('pin2').value.trim()===PIN2)showScreen('finalAccess');else alert('存取被拒');} function unlockFinalMission(){if(document.getElementById('crossPin').value.trim()===CROSS_PIN)showScreen('finalMission');else alert('存取被拒 — 請等待另一地點確認傳送');} function unlockFinalStory(){if(document.getElementById('finalPin').value.trim()===FINAL_PIN)showScreen('finalStory');else alert('存取被拒');}
+function startCountdown(){secondsRemaining=120;updateTimerDisplay();showScreen('countdown');timerInterval=setInterval(function(){secondsRemaining--;if(secondsRemaining<=0){secondsRemaining=0;updateTimerDisplay();clearInterval(timerInterval);timerInterval=null;showScreen('failure');return;}updateTimerDisplay();},1000);} function updateTimerDisplay(){const m=Math.floor(secondsRemaining/60),s=secondsRemaining%60;document.getElementById('timer').innerText=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');}
+function checkBombCode(){const answer=document.getElementById('bombCode').value.trim().toLowerCase();if(answer===BOMB_CODE){if(timerInterval){clearInterval(timerInterval);timerInterval=null;}showRandomEnding();}else alert('存取被拒');} function showRandomEnding(){let pool=roleEndings;if(Math.random()<0.15)pool=globalEndings;const selected=pool[Math.floor(Math.random()*pool.length)];document.getElementById('endingText').innerText=selected;showScreen('ending');}
+</script></body></html>

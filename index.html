@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><title>FitFam Global Session</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css?v=20260525zh1"><script>function playFunMusic(){const m=document.getElementById('funMusic');if(m){m.play().catch(function(){});}}function stopFunMusic(){const m=document.getElementById('funMusic');if(m){m.pause();m.currentTime=0;}}function startFunInstructions(){playFunMusic();showScreen('funInstructions');}function showScreen(screenId){document.querySelectorAll('.panel').forEach(function(panel){panel.classList.add('hidden');});document.getElementById(screenId).classList.remove('hidden');if(screenId==='globalIntro'||screenId==='funInstructions'||screenId==='checkIn'){document.body.classList.add('funTheme');}else{document.body.classList.remove('funTheme');}if(screenId==='interception'){stopFunMusic();const alertSound=document.getElementById('alertSound');if(alertSound){alertSound.currentTime=0;alertSound.play().catch(function(){});}}window.scrollTo(0,0);}function unlockInterception(){const pin=document.getElementById("readyPinInput").value.trim();if(pin==="0101"){showScreen("interception");}else{alert("存取被拒");}}window.onload=function(){document.body.classList.add('funTheme');};</script></head><body class="funTheme"><img src="my-photo.jpg" id="cornerLogo" alt="FitFam Logo"><audio id="funMusic" src="fun-olympics.mp3" preload="auto" loop></audio><audio id="alertSound" src="alert.mp3" preload="auto"></audio><h1>FITFAM GLOBAL SESSION</h1><div id="globalIntro" class="panel funPanel"><h2 class="funTitle">FitFam 趣味運動會 🌈</h2><p class="textBlock">歡迎來到 FitFam。
+
+今天的訓練有一點不一樣。
+
+香港 🤝 台灣
+同一時間。同一股能量。
+
+We sweat. We connect.
+
+今天不複雜。
+只有運動、團隊合作，
+以及看看哪一隊最後仍然有能量。</p><button onclick="startFunInstructions()">開始活動 🎵</button></div><div id="funInstructions" class="panel funPanel hidden"><h2 class="funTitle">FitFam 趣味運動會 🌈</h2><p class="textBlock"><span class="sectionTitle">指示</span>
+• 圍繞公園完成 1 圈
+• 不可抄捷徑 😄
+• 必須全隊一起完成
+
+完成後：
+返回起點
+想一個隊名
+拍一張隊伍照片
+上載到 WhatsApp：
+[LOCATION] Team [隊名]
+
+然後：
+繼續做開合跳
+直到所有隊伍都返回
+不要消失 😏
+
+<span class="sectionTitle">隊伍規則</span>
+全隊必須一起行動。
+團隊合作。
+不要留下任何人。</p><button onclick="showScreen('checkIn')">繼續到隊伍報到 ✅</button></div><div id="checkIn" class="panel funPanel hidden"><h2 class="funTitle">隊伍報到 ✅</h2><p class="textBlock">✅ 隊名已建立
+✅ 照片已上載
+✅ 所有隊員在場
+
+等待所有隊伍。
+不要提前開始。
+當所有隊伍準備好後，HQ 會提供準備 PIN。</p><input id="readyPinInput" placeholder="準備 PIN"><br><button onclick="unlockInterception()">隊伍準備完成 ✅</button></div><div id="interception" class="panel hidden"><h2>⚠️ 緊急截獲警報 ⚠️</h2><p class="textBlock">…偵測到傳入訊號…
+…解碼中…
+…
+這是緊急事件。
+這不是今天原定訓練的一部分。
+一名重要人物已被挾持為人質。
+情報不完整。
+碎片分散在不同地點。
+所有隊伍立即啟動。
+目前有兩項行動：
+
+<span class="sectionTitle">香港追蹤單位</span>
+找出並捕獲綁架者
+
+<span class="sectionTitle">台灣救援單位</span>
+找出並救出人質
+
+沒有任何一隊掌握全部情報。
+香港與台灣必須合作。
+立即行動。</p><button onclick="showScreen('assignment')">繼續</button></div><div id="assignment" class="panel hidden"><h2>單位分配</h2><p class="textBlock">你們已被分配角色。
+
+<span class="sectionTitle">香港追蹤單位</span>
+識別並捕獲綁架者
+
+<span class="sectionTitle">台灣救援單位</span>
+找出並救出人質
+
+每隊會收到不同指示。
+成功取決於協調合作。
+每一方都會解鎖能幫助另一方推進的情報。
+立即出發。</p><div class="teamGrid"><a class="teamButton" href="tracking1.html">香港追蹤小隊 1</a><a class="teamButton" href="tracking2.html">香港追蹤小隊 2</a><a class="teamButton" href="tracking3.html">香港追蹤小隊 3</a><a class="teamButton" href="recovery1.html">台灣救援小隊 1</a><a class="teamButton" href="recovery2.html">台灣救援小隊 2</a><a class="teamButton" href="recovery3.html">台灣救援小隊 3</a></div></div></body></html>
